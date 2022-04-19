@@ -1,0 +1,13 @@
+{
+    "hello.name": "Hello",
+    "hello.description": "Hello, world!",
+    "speech2text.name": "Speech to Text",
+    "speech2text.collaborator": "Baidu",
+    "speech2text.description": "Talk to your projects.",
+    "text2speech.name": "Text to Speech",
+    "text2speech.collaborator": "Baidu",
+    "text2speech.description": "Make your projects talk.",
+    "translate.name": "Translate",
+    "translate.collaborator": "Baidu",
+    "translate.description": "Translate text into many languages."
+}
