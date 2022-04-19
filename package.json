@@ -4,7 +4,7 @@
   "description": "Scratch extensions store.",
   "main": "src/index.json",
   "scripts": {
-    "start": "http-server -c-1 -g --cors -p 8018 ./src"
+    "start": "http-server -c-1 -g --cors -p 8018 ."
   },
   "keywords": [
     "scratch",
