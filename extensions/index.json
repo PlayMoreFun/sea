@@ -1,0 +1,49 @@
+[
+    {
+        "name": "Speech to Text",
+        "extensionId": "speech2text",
+        "tags": [
+            "stage",
+            "sensing",
+            "ai"
+        ],
+        "description": "Talk to your projects.",
+        "collaborator": "Baidu",
+        "internetConnectionRequired": true,
+        "disabled": true
+    },
+    {
+        "name": "Text to Speech",
+        "extensionId": "text2speech",
+        "tags": [
+            "stage",
+            "ai"
+        ],
+        "description": "Make your projects talk.",
+        "collaborator": "Baidu",
+        "internetConnectionRequired": true,
+        "disabled": true
+    },
+    {
+        "name": "Translate",
+        "extensionId": "translate",
+        "insetIconURL": "icon.png",
+        "tags": [
+            "stage",
+            "ai"
+        ],
+        "description": "Translate text into many languages.",
+        "collaborator": "Baidu",
+        "internetConnectionRequired": true,
+        "disabled": true
+    },
+    {
+        "name": "Hello",
+        "extensionId": "hello",
+        "insetIconURL": "icon.png",
+        "tags": [
+            "stage"
+        ],
+        "description": "Hello, world!"
+    }
+]
