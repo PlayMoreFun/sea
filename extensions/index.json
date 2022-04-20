@@ -34,16 +34,6 @@
         ],
         "description": "Translate text into many languages.",
         "collaborator": "Baidu",
-        "internetConnectionRequired": true,
-        "disabled": true
-    },
-    {
-        "name": "Hello",
-        "extensionId": "hello",
-        "insetIconURL": "icon.png",
-        "tags": [
-            "stage"
-        ],
-        "description": "Hello, world!"
+        "internetConnectionRequired": true
     }
 ]
