@@ -2,12 +2,19 @@
     "hello.name": "Hello",
     "hello.description": "你好，世界！",
     "speech2text.name": "语音识别",
-    "speech2text.collaborator": "百度",
     "speech2text.description": "和你的作品说话。",
     "text2speech.name": "文字朗读",
-    "text2speech.collaborator": "百度",
     "text2speech.description": "让你的作品开口说话。",
     "translate.name": "翻译",
     "translate.collaborator": "百度",
-    "translate.description": "把文字翻译成多种语言。"
+    "translate.description": "把文字翻译成多种语言。",
+    "microbit.name": "micro:bit",
+    "microbit.collaborator": "micro:bit",
+    "microbit.description": "把作品连接到实体世界",
+    "mario.name": "LEGO马里欧",
+    "mario.collaborator": "LEGO",
+    "mario.description": "马里欧活力新生啦！",
+    "tello.name": "Tello",
+    "tello.collaborator": "睿炽科技",
+    "tello.description": "让创造力飞翔。"
 }

@@ -1,32 +1,83 @@
 [
     {
+        "name": "Tello",
+        "extensionId": "tello",
+        "iconURL": "feature.png",
+        "insetIconURL": "icon.png",
+        "connectionIconURL": "connection.png",
+        "tags": [
+            "hardware"
+        ],
+        "description": "Let creativity fly.",
+        "collaborator": "Ryze",
+        "internetConnectionRequired": true,
+        "helpLink": true
+    },
+    {
+        "disabled": true,
+        "name": "LEGO Mario",
+        "extensionId": "mario",
+        "iconURL": "feature.png",
+        "insetIconURL": "icon.svg",
+        "connectionIconURL": "connection.svg",
+        "connectionTipIconURL": "connection-tip.svg",
+        "tags": [
+            "hardware"
+        ],
+        "description": "Mario is alive!",
+        "collaborator": "LEGO",
+        "bluetoothRequired": true,
+        "useAutoScan": true,
+        "launchPeripheralConnectionFlow": true,
+        "helpLink": true
+    },
+    {
+        "name": "micro:bit",
+        "extensionId": "microbit",
+        "iconURL": "feature.png",
+        "insetIconURL": "icon.svg",
+        "connectionIconURL": "connection.svg",
+        "connectionSmallIconURL": "icon.svg",
+        "tags": [
+            "hardware"
+        ],
+        "description": "Connect your projects with the world.",
+        "collaborator": "micro:bit",
+        "bluetoothRequired": true,
+        "launchPeripheralConnectionFlow": true,
+        "helpLink": true
+    },
+    {
+        "disabled": true,
         "name": "Speech to Text",
         "extensionId": "speech2text",
+        "iconURL": "feature.png",
+        "insetIconURL": "icon.svg",
         "tags": [
             "stage",
             "sensing",
             "ai"
         ],
         "description": "Talk to your projects.",
-        "collaborator": "Baidu",
-        "internetConnectionRequired": true,
-        "disabled": true
+        "internetConnectionRequired": true
     },
     {
+        "disabled": true,
         "name": "Text to Speech",
         "extensionId": "text2speech",
+        "iconURL": "feature.png",
+        "insetIconURL": "icon.svg",
         "tags": [
             "stage",
             "ai"
         ],
         "description": "Make your projects talk.",
-        "collaborator": "Baidu",
-        "internetConnectionRequired": true,
-        "disabled": true
+        "internetConnectionRequired": true
     },
     {
         "name": "Translate",
         "extensionId": "translate",
+        "iconURL": "feature.png",
         "insetIconURL": "icon.png",
         "tags": [
             "stage",
