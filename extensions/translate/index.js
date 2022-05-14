@@ -172,9 +172,9 @@ class TranslateBlocks {
         urlBase += `&to=${lang}`;
         urlBase += `&q=${encodeURIComponent(args.WORDS)}`;
         urlBase += `&salt=${salt}`;
-        urlBase += `&sign=${md5(signStr)}`;
+        urlBase += `&sign=${Util.md5(signStr)}`;
 
-        const tempThis = this;
+        const self = this;
         const translatePromise = fetchJsonp(urlBase, {}, serverTimeoutMs)
             .then(res => res.json())
             .then(({trans_result, error_msg}) => {
@@ -184,11 +184,11 @@ class TranslateBlocks {
                 }
                 if (trans_result && trans_result.length > 0) {
                     const translated = trans_result[0].dst;
-                    tempThis._translateResult = translated;
+                    self._translateResult = translated;
                     // Cache what we just translated so we don't keep making the
                     // same call over and over.
-                    tempThis._lastTextTranslated = args.WORDS;
-                    tempThis._lastLangTranslated = args.LANGUAGE;
+                    self._lastTextTranslated = args.WORDS;
+                    self._lastLangTranslated = args.LANGUAGE;
                     return translated;
                 }
                 return '';
@@ -256,8 +256,8 @@ Scratch.extensions.register(new TranslateBlocks({
             { code: 'swe', name: '瑞典语' },
             { code: 'th', name: '泰语' },
             { code: 'vie', name: '越南语' },
-            { code: 'zh', name: '中文(简体)' },
-            { code: 'cht', name: '中文(繁体)' }
+            { code: 'zh', name: '简体中文' },
+            { code: 'cht', name: '繁体中文' }
         ],
         'zh-tw': [
             { code: 'ara', name: '阿拉伯文' },
@@ -284,8 +284,8 @@ Scratch.extensions.register(new TranslateBlocks({
             { code: 'swe', name: '瑞典文' },
             { code: 'th', name: '泰文' },
             { code: 'vie', name: '越南文' },
-            { code: 'zh', name: '中文(簡體)' },
-            { code: 'cht', name: '中文(繁體)' }
+            { code: 'zh', name: '簡體中文' },
+            { code: 'cht', name: '繁體中文' }
         ]
     },
     scratchToBaiduMap: {

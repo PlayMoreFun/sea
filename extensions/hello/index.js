@@ -38,7 +38,7 @@ class HelloExtension {
             // It can be changed without breaking projects.
             name: formatMessage({
                 id: 'name',
-                defaultValue: 'Hello'
+                default: 'Hello'
             }),
 
             blocks: [
@@ -54,7 +54,7 @@ class HelloExtension {
                     blockType: Scratch.BlockType.REPORTER,
                     text: formatMessage({
                         id: 'block.hello.text',
-                        defaultValue: 'Hello, [ONE]'
+                        default: 'Hello, [ONE]'
                     }),
                     arguments: {
                         ONE: {
@@ -71,7 +71,7 @@ class HelloExtension {
                             type: Scratch.ArgumentType.STRING,
                             defaultValue: formatMessage({
                                 id: 'block.hello.value',
-                                defaultValue: 'value'
+                                default: 'world'
                             }),
                         }
                     }
@@ -89,7 +89,7 @@ class HelloExtension {
         // The block will wait until the Promise resolves and return the resolved value.
         return formatMessage({
             id: 'block.hello.opcode',
-            defaultValue: 'Hello, {ONE}!'
+            default: 'Hello, {ONE}!'
         }, args);
     }
   }
