@@ -1,5 +1,6 @@
 [
     {
+        "disabled": true,
         "name": "Tello",
         "extensionId": "tello",
         "iconURL": "feature.png",
@@ -14,15 +15,15 @@
         "helpLink": true
     },
     {
-        "disabled": true,
         "name": "LEGO Mario",
-        "extensionId": "mario",
+        "extensionId": "legomario",
         "iconURL": "feature.png",
         "insetIconURL": "icon.svg",
         "connectionIconURL": "connection.svg",
         "connectionTipIconURL": "connection-tip.svg",
         "tags": [
-            "hardware"
+            "hardware",
+            "sensing"
         ],
         "description": "Mario is alive!",
         "collaborator": "LEGO",
