@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>@Sea</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="doc-page"><button aria-label="Scroll back to top"
+      class="clean-btn back-top-button" type="button"></button>
+    <aside class="sidebar-container">
+      <div class="sidebar">
+        <nav id="menu-content" class="menu thin-scrollbar">
+        </nav>
+      </div>
+    </aside>
+    <main class="doc-container">
+      <div class="container padding-top--md padding-bottom--lg">
+        <div class="row">
+          <div class="col">
+            <div class="item-container">
+              <article id="content">
+                <div class="markdown">
+                  <header>
+                    <h1>
+                        Scratch Extensions Assemblage<br>
+                        Help Center
+                    </h1>
+                  </header>
+                  <p>Not found help page for the extension.</p>
+                  <p>没有找到这个扩展的帮助内容。</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script>
+    var search = location.search.substring(1).split(',');
+    var extensionId = search[0];
+    var locale = '';
+    if (search.length > 1) {
+        locale = `.${search[1]}`;
+    }
+    marked.setOptions({
+        baseUrl: `../extensions/${extensionId}`
+    });
+    var menu = [];
+    var submenuIndex = -1;
+    var slugger = new marked.Slugger();
+    marked.use({
+        walkTokens: token => {
+            if (token.type === 'heading') {
+                if (token.depth === 1) {
+                    document.title = `${token.text} @Sea`;
+                } else if (token.depth > 1 && token.depth < 4) {
+                    token.id = slugger.slug(token.text);
+                    if (token.depth === 2) {
+                        menu.push(token);
+                        submenuIndex++;
+                    } else {
+                        var submenu = menu[submenuIndex];
+                        if (Array.isArray(submenu)) {
+                            submenu.push(token);
+                        } else {
+                            submenu = [].concat(submenu, token);
+                        }
+                        menu[submenuIndex] = submenu;
+                    }
+                }
+            }
+        }
+    })
+    var fetchHelp = new Promise((resolve, reject) => {
+        fetch(`../extensions/${extensionId}/help${locale}.md`)
+            .then(res => {
+                if (res.status == 404) {
+                    fetch(`../extensions/${extensionId}/help.md`)
+                        .then(res => {
+                            if (res.ok) {
+                                resolve(res);
+                                return;
+                            }
+                            reject(res.statusText);
+                        })
+                        .catch(reject);
+                    return;
+                }
+                resolve(res);
+            })
+            .catch(reject);
+    })
+    fetchHelp
+        .then(res => res.text())
+        .then(markdown => {
+            if (markdown && markdown.length > 1) {
+                document.getElementById('content').innerHTML = marked.parse(markdown);
+                var html = '<ul class="menu__list">';
+                for (var item of menu) {
+                    if (Array.isArray(item)) {
+                        var title = item.shift();
+                        console.log(title)
+                        html += '<li class="menu__list-item"><div class="menu__list-item-collapsible">';
+                        html += `<a href="#${title.id}" class="menu__link menu__link--sublist">${title.text}</a></div>`;
+                        html += '<ul class="menu__list" style="display: block; overflow: visible; height: auto;">';
+                        for (var subitem of item) {
+                            html += `<li class="menu__list-item"><a class="menu__link" href="#${subitem.id}">${subitem.text}</a></li>`;
+                        }
+                        html += '</ul></li>'
+                    } else {
+                        html += `<li class="menu__list-item"><a class="menu__link" href="#${item.id}">${item.text}</a></li>`;
+                    }
+                }
+                html += '</ul>';
+                document.getElementById('menu-content').innerHTML = html;
+            }
+        })
+        .catch(console.error);
+  </script>
+</body>
+</html>
