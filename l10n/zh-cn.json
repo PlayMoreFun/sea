@@ -16,5 +16,8 @@
     "legomario.description": "马里欧活力新生啦！",
     "tello.name": "Tello",
     "tello.collaborator": "睿炽科技",
-    "tello.description": "让创造力飞翔。"
+    "tello.description": "让创造力飞翔。",
+    "microbitusb.name": "micro:bit (USB)",
+    "microbitusb.collaborator": "micro:bit",
+    "microbitusb.description": "让作品拥有改造世界的力量。"
 }

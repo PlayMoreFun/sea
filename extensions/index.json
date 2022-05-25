@@ -1,6 +1,22 @@
 [
     {
         "disabled": true,
+        "name": "micro:bit (USB)",
+        "extensionId": "microbitusb",
+        "iconURL": "feature.png",
+        "insetIconURL": "icon.svg",
+        "connectionIconURL": "connection.svg",
+        "connectionSmallIconURL": "icon.svg",
+        "tags": [
+            "hardware"
+        ],
+        "description": "Your projects can be change the world.",
+        "collaborator": "micro:bit",
+        "usbConnectionRequired": true,
+        "launchPeripheralConnectionFlow": true,
+        "helpLink": true
+    },
+    {
         "name": "Tello",
         "extensionId": "tello",
         "iconURL": "feature.png",

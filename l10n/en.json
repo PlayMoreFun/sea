@@ -16,5 +16,8 @@
     "legomario.description": "Mario is alive!",
     "tello.name": "Tello",
     "tello.collaborator": "Dyze",
-    "tello.description": "Let creativity fly."
+    "tello.description": "Let creativity fly.",
+    "microbitusb.name": "micro:bit (USB)",
+    "microbitusb.collaborator": "micro:bit",
+    "microbitusb.description": "Your projects can be change the world."
 }
