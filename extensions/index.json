@@ -1,6 +1,19 @@
 [
     {
-        "disabled": true,
+        "name": "Tello",
+        "extensionId": "tello",
+        "iconURL": "feature.png",
+        "insetIconURL": "icon.png",
+        "connectionIconURL": "connection.png",
+        "tags": [
+            "hardware"
+        ],
+        "description": "Let creativity fly.",
+        "collaborator": "PLAY MORE FUN!",
+        "internetConnectionRequired": true,
+        "helpLink": true
+    },
+    {
         "name": "micro:bit (USB)",
         "extensionId": "microbitusb",
         "iconURL": "feature.png",
@@ -11,40 +24,8 @@
             "hardware"
         ],
         "description": "Your projects can be change the world.",
-        "collaborator": "micro:bit",
+        "collaborator": "PLAY MORE FUN!",
         "usbConnectionRequired": true,
-        "launchPeripheralConnectionFlow": true,
-        "helpLink": true
-    },
-    {
-        "name": "Tello",
-        "extensionId": "tello",
-        "iconURL": "feature.png",
-        "insetIconURL": "icon.png",
-        "connectionIconURL": "connection.png",
-        "tags": [
-            "hardware"
-        ],
-        "description": "Let creativity fly.",
-        "collaborator": "Ryze",
-        "internetConnectionRequired": true,
-        "helpLink": true
-    },
-    {
-        "name": "LEGO Super Mario",
-        "extensionId": "legomario",
-        "iconURL": "feature.png",
-        "insetIconURL": "icon.svg",
-        "connectionIconURL": "connection.svg",
-        "connectionTipIconURL": "connection-tip.svg",
-        "tags": [
-            "hardware",
-            "sensing"
-        ],
-        "description": "Mario is alive!",
-        "collaborator": "LEGO",
-        "bluetoothRequired": true,
-        "useAutoScan": true,
         "launchPeripheralConnectionFlow": true,
         "helpLink": true
     },
@@ -62,6 +43,60 @@
         "collaborator": "micro:bit",
         "bluetoothRequired": true,
         "launchPeripheralConnectionFlow": true,
+        "helpLink": true
+    },
+    {
+        "name": "LEGO Super Mario",
+        "extensionId": "legomario",
+        "iconURL": "feature.png",
+        "insetIconURL": "icon.svg",
+        "connectionIconURL": "connection.svg",
+        "connectionTipIconURL": "connection-tip.svg",
+        "tags": [
+            "hardware",
+            "sensing"
+        ],
+        "description": "Mario is alive!",
+        "collaborator": "PLAY MORE FUN!",
+        "bluetoothRequired": true,
+        "launchPeripheralConnectionFlow": true,
+        "useAutoScan": true,
+        "helpLink": true
+    },
+    {
+        "name": "LEGO BOOST",
+        "extensionId": "boost",
+        "iconURL": "feature.png",
+        "insetIconURL": "icon.svg",
+        "connectionIconURL": "connection.svg",
+        "connectionTipIconURL": "connection-tip.svg",
+        "connectionSmallIconURL": "icon.svg",
+        "tags": [
+            "hardware"
+        ],
+        "description": "Bring robotic creations to life.",
+        "collaborator": "LEGO",
+        "bluetoothRequired": true,
+        "launchPeripheralConnectionFlow": true,
+        "useAutoScan": true,
+        "helpLink": true
+    },
+    {
+        "name": "LEGO Education WeDo 2.0",
+        "extensionId": "wedo2",
+        "iconURL": "feature.png",
+        "insetIconURL": "icon.svg",
+        "connectionIconURL": "connection.svg",
+        "connectionTipIconURL": "connection-tip.svg",
+        "connectionSmallIconURL": "icon.svg",
+        "tags": [
+            "hardware"
+        ],
+        "description": "Build with motors and sensors.",
+        "collaborator": "LEGO",
+        "bluetoothRequired": true,
+        "launchPeripheralConnectionFlow": true,
+        "useAutoScan": true,
         "helpLink": true
     },
     {

@@ -12,12 +12,18 @@
     "microbit.collaborator": "micro:bit",
     "microbit.description": "Connect your projects with the world.",
     "legomario.name": "LEGO Super Mario",
-    "legomario.collaborator": "LEGO",
+    "legomario.collaborator": "PLAY MORE FUN!",
     "legomario.description": "Mario is alive!",
     "tello.name": "Tello",
-    "tello.collaborator": "Dyze",
+    "tello.collaborator": "PLAY MORE FUN!",
     "tello.description": "Let creativity fly.",
     "microbitusb.name": "micro:bit (USB)",
-    "microbitusb.collaborator": "micro:bit",
-    "microbitusb.description": "Your projects can be change the world."
+    "microbitusb.collaborator": "PLAY MORE FUN!",
+    "microbitusb.description": "Your projects can be change the world.",
+    "wedo2.name": "LEGO Education WeDo 2.0",
+    "wedo2.collaborator": "LEGO",
+    "wedo2.description": "Build with motors and sensors.",
+    "boost.name": "LEGO BOOST",
+    "boost.collaborator": "LEGO",
+    "boost.description": "Bring robotic creations to life."
 }

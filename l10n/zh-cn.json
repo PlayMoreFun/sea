@@ -12,12 +12,18 @@
     "microbit.collaborator": "micro:bit",
     "microbit.description": "把作品连接到实体世界。",
     "legomario.name": "LEGO 超级马里欧",
-    "legomario.collaborator": "LEGO",
+    "legomario.collaborator": "玩心大放",
     "legomario.description": "马里欧活力新生啦！",
     "tello.name": "Tello",
-    "tello.collaborator": "睿炽科技",
+    "tello.collaborator": "玩心大放",
     "tello.description": "让创造力飞翔。",
     "microbitusb.name": "micro:bit (USB)",
-    "microbitusb.collaborator": "micro:bit",
-    "microbitusb.description": "让作品拥有改造世界的力量。"
+    "microbitusb.collaborator": "玩心大放",
+    "microbitusb.description": "让作品拥有改造世界的力量。",
+    "wedo2.name": "LEGO Education WeDo 2.0",
+    "wedo2.collaborator": "LEGO",
+    "wedo2.description": "支持马达和传感器。",
+    "boost.name": "LEGO BOOST",
+    "boost.collaborator": "LEGO",
+    "boost.description": "支持马达和传感器。"
 }
