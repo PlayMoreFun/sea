@@ -40,6 +40,9 @@ class TelloBlocks {
     constructor (runtime) {
         this.runtime = runtime;
         this._peripheral = new Tello(this.runtime, TelloBlocks.EXTENSION_ID);
+
+        this.stop = this.stop.bind(this)
+        this.runtime.on(this.runtime.constructor.PROJECT_STOP_ALL, this.stop);
     }
 
     static get EXTENSION_ID () {
