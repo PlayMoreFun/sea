@@ -1,5 +1,16 @@
 [
     {
+        "name": "Dictionary Type",
+        "extensionId": "dictionary",
+        "iconURL": "feature.png",
+        "insetIconURL": "icon.png",
+        "tags": [
+            "data"
+        ],
+        "description": "Store your data with entries.",
+        "collaborator": "PLAY MORE FUN"
+    },
+    {
         "name": "Tello",
         "extensionId": "tello",
         "iconURL": "feature.png",

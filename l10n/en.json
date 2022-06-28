@@ -1,4 +1,7 @@
 {
+    "dictionary.name": "Dictionary Type",
+    "dictionary.collaborator": "PLAY MORE FUN",
+    "dictionary.description": "Store your data with entries.",
     "hello.name": "Hello",
     "hello.description": "Hello, world!",
     "speech2text.name": "Speech to Text",

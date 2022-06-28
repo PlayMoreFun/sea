@@ -1,4 +1,7 @@
 {
+    "dictionary.name": "字典类型",
+    "dictionary.collaborator": "玩心大放",
+    "dictionary.description": "为你的数据建立词条。",
     "hello.name": "Hello",
     "hello.description": "你好，世界！",
     "speech2text.name": "语音识别",
