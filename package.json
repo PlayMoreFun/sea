@@ -1,7 +1,7 @@
 {
-  "name": "scratch-extensions-assemblage",
+  "name": "scratch-extensions-access",
   "version": "0.1.0",
-  "description": "Scratch extensions store.",
+  "description": "Scratch Extensions Access.",
   "main": "src/index.json",
   "scripts": {
     "start": "http-server -c-1 -g --cors -p 8018 ."
