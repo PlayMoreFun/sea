@@ -9,7 +9,7 @@
             "hardware"
         ],
         "description": "Let creativity fly.",
-        "collaborator": "PLAY MORE FUN!",
+        "collaborator": "PLAY MORE FUN",
         "internetConnectionRequired": true,
         "helpLink": true
     },
@@ -24,7 +24,7 @@
             "hardware"
         ],
         "description": "Your projects can be change the world.",
-        "collaborator": "PLAY MORE FUN!",
+        "collaborator": "PLAY MORE FUN",
         "usbConnectionRequired": true,
         "launchPeripheralConnectionFlow": true,
         "helpLink": true
@@ -57,7 +57,7 @@
             "sensing"
         ],
         "description": "Mario is alive!",
-        "collaborator": "PLAY MORE FUN!",
+        "collaborator": "PLAY MORE FUN",
         "bluetoothRequired": true,
         "launchPeripheralConnectionFlow": true,
         "useAutoScan": true,
