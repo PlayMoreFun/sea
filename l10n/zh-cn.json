@@ -1,4 +1,7 @@
 {
+    "fetch.name": "Fetch 数据",
+    "fetch.collaborator": "玩心大放",
+    "fetch.description": "向互联网请求数据。",
     "dictionary.name": "字典类型",
     "dictionary.collaborator": "玩心大放",
     "dictionary.description": "为你的数据建立词条。",

@@ -1,5 +1,17 @@
 [
     {
+        "name": "Fetch Data",
+        "extensionId": "fetch",
+        "iconURL": "feature.png",
+        "insetIconURL": "icon.png",
+        "tags": [
+            "data",
+            "utility"
+        ],
+        "description": "Fetch data from any source.",
+        "collaborator": "PLAY MORE FUN"
+    },
+    {
         "name": "Dictionary Type",
         "extensionId": "dictionary",
         "iconURL": "feature.png",

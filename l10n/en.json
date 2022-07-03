@@ -1,4 +1,7 @@
 {
+    "fetch.name": "Fetch Data",
+    "fetch.collaborator": "PLAY MORE FUN",
+    "fetch.description": "Fetch data from any source.",
     "dictionary.name": "Dictionary Type",
     "dictionary.collaborator": "PLAY MORE FUN",
     "dictionary.description": "Store your data with entries.",
