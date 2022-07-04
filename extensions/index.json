@@ -9,7 +9,8 @@
             "utility"
         ],
         "description": "Fetch data from any source.",
-        "collaborator": "PLAY MORE FUN"
+        "collaborator": "PLAY MORE FUN",
+        "internetConnectionRequired": true
     },
     {
         "name": "Dictionary Type",
