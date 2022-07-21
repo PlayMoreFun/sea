@@ -44,6 +44,7 @@ class FetchBlock {
                         }
                     }
                 },
+                '---',
                 {
                     opcode: 'query',
                     blockType: BlockType.REPORTER,
@@ -64,7 +65,8 @@ class FetchBlock {
                     text: formatMessage({
                         id: 'fetch.length',
                         default: 'length of data'
-                    })
+                    }),
+                    disableMonitor: true
                 },
                 '---',
                 {

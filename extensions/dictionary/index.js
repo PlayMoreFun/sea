@@ -44,7 +44,8 @@ class DictionaryBlocks {
                     text: formatMessage({
                         id: 'dictionary.json',
                         default: 'dictionary in JSON format'
-                    })
+                    }),
+                    disableMonitor: true
                 },
                 '---',
                 {
