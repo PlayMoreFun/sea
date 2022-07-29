@@ -1,4 +1,7 @@
 {
+    "textsprite.name": "Text Sprite",
+    "textsprite.description": "The writing sprite.",
+    "textsprite.collaborator": "PLAY MORE FUN",
     "fetch.name": "Fetch Data",
     "fetch.collaborator": "PLAY MORE FUN",
     "fetch.description": "Fetch data from any source.",

@@ -1,5 +1,16 @@
 [
     {
+        "name": "Text Sprite",
+        "extensionId": "textsprite",
+        "iconURL": "feature.png",
+        "insetIconURL": "icon.png",
+        "tags": [
+            "stage"
+        ],
+        "description": "The writing sprite.",
+        "collaborator": "PLAY MORE FUN"
+    },
+    {
         "name": "Fetch Data",
         "extensionId": "fetch",
         "iconURL": "feature.png",
@@ -38,6 +49,7 @@
         "helpLink": true
     },
     {
+        "disabled": true,
         "name": "micro:bit (USB)",
         "extensionId": "microbitusb",
         "iconURL": "feature.png",
@@ -130,7 +142,6 @@
         "iconURL": "feature.png",
         "insetIconURL": "icon.svg",
         "tags": [
-            "stage",
             "sensing",
             "ai"
         ],
@@ -144,7 +155,6 @@
         "iconURL": "feature.png",
         "insetIconURL": "icon.svg",
         "tags": [
-            "stage",
             "ai"
         ],
         "description": "Make your projects talk.",
@@ -156,7 +166,6 @@
         "iconURL": "feature.png",
         "insetIconURL": "icon.png",
         "tags": [
-            "stage",
             "ai"
         ],
         "description": "Translate text into many languages.",
